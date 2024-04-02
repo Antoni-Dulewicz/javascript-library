@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation with React Counter</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        class Counter extends React.Component {
+            constructor(props){
+                super(props);
+                this.state = {
+                    count: parseInt(this.props.initial, 10),
+                    intervalID: null
+                };
+            };
+
+            incrementCounter = () => {
+                this.setState(prevState => ({
+                    count: prevState.count + 1
+                }));
+            }
+
+            startCounter = () => {
+                if(!this.state.intervalID){
+                    const intervalID = setInterval(this.incrementCounter, this.props.delay);
+                    this.setState({intervalID});
+                }
+            }
+
+            stopCounter = () => {
+                clearInterval(this.state.intervalID);
+                this.setState({intervalID: null});
+            }
+
+            render(){
+                return (
+                    <div style = {{backgroundColor: 'green',display: 'block',padding: '1rem',margin: '1rem'}}>
+                        <div style = {{display: 'flex'}}>
+                            <h1 style = {{padding: '0',margin: '0',marginRight: '1rem'}}>Counter--></h1>
+                            <output style={{ fontSize: '4vh', color: 'red',marginRight: '1rem' }} >{this.state.count}</output>
+                        </div>
+                        <br/>
+                        <button onClick={this.startCounter}>Start</button>
+                        <button onClick={this.stopCounter}>Stop</button>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <Counter initial="0" delay="100" />
+                <Counter initial="100" delay="500" />
+            </div>,
+            document.getElementById('root')
+            
+        );
+
+    </script>
+</body>
+
+</html>

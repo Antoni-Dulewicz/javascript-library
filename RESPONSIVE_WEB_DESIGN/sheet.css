@@ -1,0 +1,477 @@
+.azure {
+    background-color: #F0FFFF;
+    border-color: #3c3939;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 0 10px #A8A8A8;
+}
+
+:root {
+    --text-color-initial: lightgreen;
+    --text-color-final: red;
+}
+
+
+@keyframes changeColors {
+    from{
+        color: var(--text-color-initial);
+    }
+    to{
+        color: var(--text-color-final);
+    }
+}
+
+@media (max-width: 10000px){
+    body{
+        font-size: 1rem;
+    }
+    aside  {
+        padding-right: 27rem;
+        margin-left: 5rem;
+      }
+    
+    aside h1,h2{
+        margin: 0rem;
+        margin-left: 0.5rem;
+    }
+    
+    aside h1{
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    footer {
+        margin-left: 1rem;
+    }      
+    
+    footer,a{
+        padding-left: 0.2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    header {
+        margin: 1rem;
+    }     
+    
+    header h1{
+        margin: 0.2rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    main { 
+        width: 43rem;
+        padding-bottom: 2rem;
+    }
+    
+    main blockquote{ 
+        font-size: 1rem;
+        margin: 0.5rem;
+        margin-right: 2rem;
+        font-family:monospace;
+        letter-spacing: 0.01px;
+    }
+    
+    main h1{
+        margin: 1rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    
+    nav {
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .flexpanel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1rem;
+    }
+}
+
+
+
+@media (max-width: 1440px){
+    body{
+        font-size: 1.1rem;
+    }
+    aside  {
+        padding-right: 24rem;
+        margin-left: 4rem;
+    }
+    
+    footer {
+        margin-left: 0.8rem;
+    }      
+    
+    footer,a{
+        padding-left: 0.2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    header {
+        margin: 0.8rem;
+    }     
+    
+    header h1{
+        margin: 0.8rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    main { 
+        width: 40rem;
+        padding-bottom: 2rem;
+    }
+    
+    main blockquote{ 
+        margin: 0.3rem;
+        margin-right: 1.8rem;
+        font-family:monospace;
+        font-size: 0.95rem;
+    }
+    
+    main h1{
+        margin: 0.5rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    
+    nav {
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .flexpanel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0.8rem;
+    
+    }
+}
+
+
+
+@media (max-width: 1280px){
+    body{
+        font-size: 1rem;
+    }
+    aside  {
+        padding-right: 16rem;
+        margin-left: 2rem;
+      }
+    
+    aside h1,h2{
+        margin: 0rem;
+        margin-left: 0.2rem;
+    }
+    
+    aside h1{
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    footer {
+        margin-left: 0.5rem;
+    }      
+    
+    footer,a{
+        padding-left: 0.2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    header {
+        margin: 0.5rem;
+    }     
+    
+    header h1{
+        margin: 0.2rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    main { 
+        width: 28rem;
+        padding-bottom: 2rem;
+    }
+    
+    main blockquote{ 
+        font-size: 0.9rem;
+        margin: 0.2rem;
+        margin-right: 1rem;
+        font-family:monospace
+    }
+    
+    main h1{
+        margin: 0.5rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    
+    nav {
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .flexpanel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0.5rem;
+    
+    }
+
+}
+
+
+@media (max-width: 1024px){
+    body{
+        font-size: 1rem;
+    }
+    aside  {
+        padding-right: 17rem;
+        margin-left: 5rem;
+    }
+    
+    aside h1,h2{
+        margin: 0rem;
+        margin-left: 0.2rem;
+    }
+    
+    aside h1{
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    footer {
+        margin-left: 0.5rem;
+    }      
+    
+    footer,a{
+        padding-left: 0.2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    header {
+        margin: 0.5rem;
+    }     
+    
+    header h1{
+        margin: 0.2rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    main { 
+        width: 24rem;
+        padding-bottom: 2rem;
+    }
+    
+    main blockquote{ 
+        margin: 0.2rem;
+        font-size: 0.85rem;
+        font-family:monospace
+    }
+    
+    main h1{
+        margin: 0.5rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    
+    nav {
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .flexpanel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0.5rem;
+    
+    }
+}
+
+@media (max-width: 920px){
+    aside  {
+        padding-right: 10rem;
+        margin-left: 4rem;
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    body{
+        font-size: 0.8rem;
+    }
+    
+    aside  {
+        padding-right: 6rem;
+        margin-left: 2rem;
+      }
+    
+    aside h1,h2{
+        margin: 0rem;
+        margin-left: 0.2rem;
+    }
+    
+    aside h1{
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    footer {
+        margin-left: 0.5rem;
+    }      
+    
+    footer,a{
+        padding-left: 0.2rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    header {
+        margin: 0.5rem;
+    }     
+    
+    header h1{
+        margin: 0.2rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    main { 
+        width: 18rem;
+    }
+    
+    main blockquote{ 
+        margin: 0.2rem;
+        font-size: 0.78rem;
+    }
+    
+    main h1{
+        margin: 0.5rem;
+        animation: changeColors 2s alternate infinite ease-in;
+    }
+    
+    
+    nav {
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+    
+    .flexpanel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0.5rem;
+    
+    }
+    
+}
+
+@media (max-width: 580px){
+    main{
+        width: 15rem;
+    }
+    aside{
+        padding-right: 3rem;
+        margin-left: 0.5rem;
+    }
+
+}
+
+
+@media (max-width: 480px){
+    body{
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        font-size: 0.7rem;
+        
+    }
+    .flexpanel{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        width: unset;
+    }
+    nav{
+        margin: 0;
+        padding: 0;
+        width: unset;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    main h1,blockquote{
+        text-align: center;
+    }
+    
+    aside h1,h2{
+        text-align: center;
+    
+    }
+    
+    aside{
+        margin: 0;
+        padding: 0;
+    }
+    aside ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    footer{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .flexpanel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100vh;
+        
+    }
+    .column{
+        flex: 1;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+    
+}
+
+
+
+
+
+@media (max-width: 270px){
+    .flexpanel{
+        height: unset;
+        min-height: 100vh;
+    }
+    footer{
+        flex-shrink: 0;
+    }
+}
