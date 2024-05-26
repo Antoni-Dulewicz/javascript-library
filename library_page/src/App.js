@@ -105,27 +105,6 @@ function App() {
             />
 
           ))}
-          {/* <BookCard
-              faculty="Wydzial IET"
-              field= "Cyberbezpieczenstwo"
-              subject="Programowanie skryptowe"
-              imgSrc= "python.jpg"
-              copies={1}
-            />
-          <BookCard
-              faculty="Wydzial GGiOŚ"
-              field= "Geoinformatyka"
-              subject="Programowanie skryptowe"
-              imgSrc= "geologia.jpg"
-              copies={10}
-            />
-          <BookCard
-              faculty="Wydzial Humanistyczny"
-              field= "Informatyka Społeczna"
-              subject="Programowanie skryptowe"
-              imgSrc= "abc.jpg"
-              copies={6}
-            /> */}
         </div>
       </div>
 
